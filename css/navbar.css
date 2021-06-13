@@ -1,0 +1,10 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26px 118px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05); }
+  .navbar__buttons {
+    display: flex; }
+    .navbar__buttons .button {
+      margin: 0 10px; }

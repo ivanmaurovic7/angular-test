@@ -1,0 +1,37 @@
+<div class="search">
+    <div class="search__form">
+        <div class="search__form-input">
+            <img src="./assets/search.png" alt="search.png" class="search__form-search-button">
+            <input ng-model="$root.searchQuery" type="text" class="search__form-input-field" placeholder="Upisi pojam za pretragu">
+        </div>
+        <div class="search__form-buttons">
+            <div class="search__form-button">
+                <img src="./assets/sastojci.png" alt="">
+                <span>Sastojci</span>
+                <img src="./assets/arrow-down.png" alt="">
+            </div>
+            <div class="search__form-button">
+                <img src="./assets/vrijeme.png" alt="">
+                <span>Vrijeme</span>
+                <img src="./assets/arrow-down.png" alt="">
+            </div>
+            <div class="search__form-button">
+                <img src="./assets/detaljno.png" alt="">
+                <span>Detaljno</span>
+                <img src="./assets/arrow-down.png" alt="">
+            </div>
+            <div class="search__form-button search__form-button-submit">
+                <span>TRAZI</span>
+            </div>
+        </div>
+    </div>
+    <div class="search__categories">
+        <div class="search__categories-list">
+            <div class="search__category-item" ng-repeat="category in categories">
+                <img src={{category.src}}>
+                <span>{{category.label}}</span>
+            </div>
+        </div>
+        <a href="">POGLEDAJ SVE ></a>
+    </div>
+</div>

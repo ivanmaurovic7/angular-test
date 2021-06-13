@@ -1,0 +1,40 @@
+<div class="bestRecipes">
+    <div class="bestRecipes__content">
+        <div class="bestRecipes__top">
+            <h2 class="bestRecipes__title">Najbolji recepti</h2>
+            <div class="bestRecipes__types">
+                <span class="bestRecipes__types__type bestRecipes__types__type-active">Najbolji</span>
+                <span class="bestRecipes__types__type">Najnoviji</span>
+                <span class="bestRecipes__types__type">Najbrzi</span>
+            </div>
+        </div>
+        <div class="bestRecipes__recipes">
+            <div class="bestRecipes__recipe" ng-repeat="recipe in recipes" ng-if="recipe.title.includes($root.searchQuery)">
+                <div class="bestRecipes__recipe-img">
+                    <img class="bestRecipes__recipe-img-img" src={{recipe.img}}>
+                    <img class="bestRecipes__recipe-img-play-button" ng-if="recipe.isVideo" src="./assets/play.png">
+                </div>
+                <div class="bestRecipes__recipe-rating-and-length">
+                    <div class="bestRecipes__recipe-rating">
+                        <img src="./assets/star.png" ng-repeat="recipe in [].constructor(recipe.rating) track by $index">
+                        <img src="./assets/star-gray.png" ng-repeat="recipe in [].constructor(5 - recipe.rating) track by $index">
+                    </div>
+                    <span class="bestRecipes__recipe-length">{{recipe.duration}} min</span>
+                </div>
+                <span class="bestRecipes__recipe-category">
+                    {{recipe.category}}
+                </span>
+                <h2 class="bestRecipes__recipe-title">
+                    {{recipe.title}}
+                </h2>
+                <p class="bestRecipes__recipe-description">
+                    {{recipe.description}}
+                </p>
+            </div>
+        </div>
+        <span class="bestRecipes__load-more">
+            UCITAJ VISE RECEPATA
+        </span>
+    </div>
+    <img class="bestRecipes__ad" src="./assets/ad.png">
+</div>

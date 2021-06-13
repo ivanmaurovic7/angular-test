@@ -1,0 +1,24 @@
+<div class="featuredRecipes">
+    <div class="featuredRecipes__top">
+        <h2 class="featuredRecipes__title">Izdvojeni recepti</h2>
+        <a href="">POGLEDAJ SVE ></a>
+    </div>
+    <div class="featuredRecipes__recipes">
+        <div class="featuredRecipes__recipe" ng-repeat="recipe in recipes">
+            <div class="featuredRecipes__recipe-img">
+                <img class="featuredRecipes__recipe-img-img" src={{recipe.img}}>
+                <img class="featuredRecipes__recipe-img-play-button" ng-if="recipe.isVideo" src="./assets/play.png">
+            </div>
+            <div class="featuredRecipes__recipe-rating-and-length">
+                <div class="featuredRecipes__recipe-rating">
+                    <img src="./assets/star.png" ng-repeat="recipe in [].constructor(recipe.rating) track by $index">
+                    <img src="./assets/star-gray.png" ng-repeat="recipe in [].constructor(5 - recipe.rating) track by $index">
+                </div>
+                <span class="featuredRecipes__recipe-length">{{recipe.duration}} min</span>
+            </div>
+            <h2 class="featuredRecipes__recipe-title">
+                {{recipe.title}}
+            </h2>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+* {
+  font-family: 'Montserrat', sans-serif; }
+
+body {
+  margin: 0; }
+
+.button {
+  border: 1px solid #DEDEDE;
+  color: #FB3D02;
+  border-radius: 24px;
+  padding: 16px 25px;
+  display: flex;
+  align-items: center;
+  cursor: pointer; }
+  .button__text {
+    margin: 0 13px; }
+  .button__icon-left {
+    width: 18px; }
+  .button__icon-right {
+    width: 8px;
+    position: relative;
+    top: 1.5px; }
