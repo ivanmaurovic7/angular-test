@@ -9,7 +9,7 @@
             </div>
         </div>
         <div class="bestRecipes__recipes">
-            <div class="bestRecipes__recipe" ng-repeat="recipe in recipes" ng-if="recipe.title.includes($root.searchQuery)">
+            <div class="bestRecipes__recipe" ng-repeat="recipe in recipes" ng-if="recipe.title.toLowerCase().includes($root.searchQuery)">
                 <div class="bestRecipes__recipe-img">
                     <img class="bestRecipes__recipe-img-img" src={{recipe.img}}>
                     <img class="bestRecipes__recipe-img-play-button" ng-if="recipe.isVideo" src="./assets/play.png">

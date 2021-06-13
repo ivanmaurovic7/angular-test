@@ -1,96 +1,116 @@
 .bestRecipes {
   display: flex;
-  padding: 70px 120px; }
-  .bestRecipes__ad {
-    margin: 0 30px;
-    max-width: 300px;
-    max-height: 600px;
-    display: block; }
-  .bestRecipes__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 25px; }
-  .bestRecipes__title {
-    color: #1F1F1F;
-    font-size: 30px;
-    font-weight: 700; }
-  .bestRecipes__types {
-    display: flex;
-    margin-left: 100px; }
-    .bestRecipes__types__type {
-      border: 1px solid #B5B5B5;
-      color: #353535;
-      font-weight: 700;
-      font-size: 16px;
-      padding: 10px 26px;
-      border-radius: 60px;
-      margin: 0 9px;
-      cursor: pointer; }
-    .bestRecipes__types__type-active {
-      color: #FB3D02;
-      border: 1px solid #FB3D02; }
-  .bestRecipes__recipes {
-    display: flex;
-    flex-wrap: wrap; }
-  .bestRecipes__recipe {
-    width: 246px;
-    margin: 10px;
-    cursor: pointer; }
-  .bestRecipes__recipe-img {
-    position: relative; }
-  .bestRecipes__recipe-img-img {
-    width: 100%; }
-  .bestRecipes__recipe-img-play-button {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 80px;
-    height: 80px;
-    opacity: .85; }
-  .bestRecipes__recipe-rating-and-length {
-    margin-top: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; }
-  .bestRecipes__recipe-rating {
-    display: flex; }
-    .bestRecipes__recipe-rating img {
-      margin-right: 3px;
-      display: block; }
-  .bestRecipes__recipe-length {
-    border: 1px solid #DEDEDE;
-    border-radius: 40px;
-    padding: 4px 10px;
-    font-size: 12px;
-    color: #1F1F1F; }
-  .bestRecipes__recipe-category {
-    color: #353535;
-    font-size: 13px;
-    margin-top: 13px;
-    display: block; }
-  .bestRecipes__recipe-title {
-    margin-top: 5px;
-    margin-bottom: 10px;
-    color: #1F1F1F;
-    font-size: 20px;
-    font-weight: 700; }
-  .bestRecipes__recipe-description {
-    font-size: 16px;
-    margin-top: 0;
-    color: #353535; }
-  .bestRecipes__load-more {
-    color: #FB3D02;
-    font-weight: bold;
-    font-size: 16px;
-    border: 1px solid #DEDEDE;
-    padding: 20px 27px;
-    border-radius: 50px;
-    margin: 30px auto;
-    display: block;
-    width: 187px;
-    text-align: center;
-    cursor: pointer; }
+  padding: 70px 120px;
+}
+.bestRecipes__ad {
+  margin: 0 30px;
+  max-width: 300px;
+  max-height: 600px;
+  display: block;
+}
+.bestRecipes__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.bestRecipes__title {
+  color: #1f1f1f;
+  font-size: 30px;
+  font-weight: 700;
+}
+.bestRecipes__types {
+  display: flex;
+  margin-left: 100px;
+}
+.bestRecipes__types__type {
+  border: 1px solid #b5b5b5;
+  color: #353535;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 10px 26px;
+  border-radius: 60px;
+  margin: 0 9px;
+  cursor: pointer;
+}
+.bestRecipes__types__type-active {
+  color: #fb3d02;
+  border: 1px solid #fb3d02;
+}
+.bestRecipes__recipes {
+  display: flex;
+  flex-wrap: wrap;
+}
+.bestRecipes__recipe {
+  width: 246px;
+  margin: 10px;
+  cursor: pointer;
+}
+.bestRecipes__recipe-img {
+  position: relative;
+}
+.bestRecipes__recipe-img-img {
+  width: 100%;
+}
+.bestRecipes__recipe-img-play-button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80px;
+  height: 80px;
+  opacity: 0.85;
+}
+.bestRecipes__recipe-rating-and-length {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bestRecipes__recipe-rating {
+  display: flex;
+}
+.bestRecipes__recipe-rating img {
+  margin-right: 3px;
+  display: block;
+}
+.bestRecipes__recipe-length {
+  border: 1px solid #dedede;
+  border-radius: 40px;
+  padding: 4px 10px;
+  font-size: 12px;
+  color: #1f1f1f;
+}
+.bestRecipes__recipe-category {
+  color: #353535;
+  font-size: 13px;
+  margin-top: 13px;
+  display: block;
+}
+.bestRecipes__recipe-title {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #1f1f1f;
+  font-size: 20px;
+  font-weight: 700;
+}
+.bestRecipes__recipe-description {
+  font-size: 16px;
+  margin-top: 0;
+  color: #353535;
+}
+.bestRecipes__load-more {
+  color: #fb3d02;
+  font-weight: bold;
+  font-size: 16px;
+  border: 1px solid #dedede;
+  padding: 20px 27px;
+  border-radius: 50px;
+  margin: 30px auto;
+  display: block;
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+}
